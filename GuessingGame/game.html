@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+    <script type="module" defer src="game.js"></script>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+        #Range{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Number Guessing Game</h1>
+    <form action="">
+        <div id="Range">
+        <label for="from">Range from: </label>
+        <input type="number" name="from" id="from" min="0" >
+        <label for="to">TO: </label>
+        <input type="number" name="to" id="to" >
+        </div>
+        <label for="num">Enter your guess here: </label>
+        <input type="number" name="num" id="num">
+        <button>Submit</button>
+    </form>
+    <p id="response"></p>
+</body>
+</html>
