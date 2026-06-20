@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" defer src="todo.js"></script>
+    <title>ToDO</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        form{
+            font-size: large;
+        }
+        form input{
+            outline: none;
+            height: 40px;
+            width: 200px;
+            border-radius: 13px;
+        }
+
+        form button{
+            height: 40px;
+            width: auto;
+            border-radius: 13px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>TodoList App</h1>
+    <form action="">
+        <label for="input">Enter TODO:</label>
+        <input type="text" id="input">
+        <button id="submit">ADD ToDo</button>
+    </form>
+    <ul id="tasklist"></ul>
+</body>
+</html>
